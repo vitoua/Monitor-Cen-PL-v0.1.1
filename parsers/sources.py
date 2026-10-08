@@ -1,0 +1,14 @@
+from .common import generic_search
+SOURCES = {
+ 'x-kom': ('retail','https://www.x-kom.pl/szukaj?q={q}'),
+ 'Morele': ('retail','https://www.morele.net/wyszukiwarka/?q={q}'),
+ 'Komputronik': ('retail','https://www.komputronik.pl/search-filter/{q}'),
+ 'Media Expert': ('retail','https://www.mediaexpert.pl/search?query%5Bquerystring%5D={q}'),
+ 'RTV Euro AGD': ('retail','https://www.euro.com.pl/search.bhtml?keyword={q}'),
+ 'OleOle': ('retail','https://www.oleole.pl/search.bhtml?keyword={q}'),
+ 'Sferis': ('retail','https://www.sferis.pl/szukaj?q={q}'),
+ 'Allegro': ('marketplace','https://allegro.pl/listing?string={q}'),
+}
+def scrape(source,pn,ean,name):
+    kind,url=SOURCES[source]
+    return generic_search(source,kind,url,pn,ean,name)

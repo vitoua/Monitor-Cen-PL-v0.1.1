@@ -1,0 +1,24 @@
+{
+  "tool": "artifact-validator",
+  "schemaVersion": "2.0",
+  "validatorVersion": "3.2.3",
+  "result": "valid",
+  "exitCode": 0,
+  "input": {
+    "path": "products.xlsx",
+    "sha256": "aa7405a81bea70d5e69834c2c4d910cb11455f6abe24ae8d2f82d0486972e7af",
+    "sizeBytes": 5348,
+    "kind": "xlsx"
+  },
+  "output": null,
+  "backup": null,
+  "repair": null,
+  "packageError": null,
+  "summary": {
+    "errorCount": 0,
+    "warningCount": 0,
+    "repairableCount": 0,
+    "issueCount": 0
+  },
+  "issues": []
+}
